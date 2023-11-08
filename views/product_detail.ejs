@@ -1,0 +1,23 @@
+
+<ul>
+  <li>
+    <h2><%= product.name %></h2>
+    <img class="detail-image" src="/images/<%= product.image %>" alt="Product Image">
+    <br>
+    <br>
+    <p><%= product.description %></p>
+    <p>Category: <%= categoryName %></p>
+    <p>Price: $<%= product.price %></p>
+    <p>Number of Items: <%= product.number_of_items %></p>
+    
+  </li>
+</ul>
+
+
+<hr>
+<p>
+  <a href="<%= product.url %>/delete">Delete Product</a>
+</p>
+<p>
+  <a href="<%= product.url %>/update">Update Product</a>
+</p>
